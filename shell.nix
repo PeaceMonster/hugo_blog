@@ -7,5 +7,6 @@ mkShell {
     go
     gcc
     git
+    hugo
   ];
 }
