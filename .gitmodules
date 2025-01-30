@@ -1,3 +1,9 @@
 [submodule "MikkelsBlog/themes/risotto"]
 	path = MikkelsBlog/themes/risotto
 	url = https://github.com/joeroe/risotto
+[submodule "MikkelsBlog/themes/ananke"]
+	path = MikkelsBlog/themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "MikkelsBlog/themes/hugo-bearcub"]
+	path = MikkelsBlog/themes/hugo-bearcub
+	url = https://github.com/clente/hugo-bearcub
