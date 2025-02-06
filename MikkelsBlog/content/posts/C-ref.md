@@ -1,6 +1,11 @@
 ---
 title : "C reference"
 toc : true
+date : "2025-01-30"
+description : "Reference ark med functioner til c"
+author : "Mikkel Ugilt"
+tags : ["comparc"]
+categories :  ["ta"]
 ---
 
 # Preface
@@ -61,7 +66,7 @@ En struct defineres på følgende måde:
 struct name_of_struct {
     type field_name;
     ...
-}
+};
 ```
 
 Exempel:
@@ -70,7 +75,7 @@ Exempel:
 struct deck {
     int current_index;
     int *numbers;
-}
+};
 ```
 
 *Denne struct indeholder et tal der er indexet for det øverste kort `current_index`, og så har den en pointer til et array af tal `numbers`*
@@ -83,14 +88,17 @@ Man kan skabe et struct på følgende måder:
 struct Car {
     int door_numbers;
     int speed;
-}
+};
 
 // Initialisering af struct
 struct Car car1 = {4, 120};
 
-// Modificering af værdier
-car1.door_numbers = 23;
-car1.speed = 23;
+int main() {
+  // Modificering af værdier
+  car1.door_numbers = 23;
+  car1.speed = 23;
+  return 0;
+}
 ```
 
 Dette laver structen direkte. Den anden måde er ved brug af `malloc`
@@ -99,13 +107,16 @@ Dette laver structen direkte. Den anden måde er ved brug af `malloc`
 struct Car {
     int door_numbers;
     int speed;
-}
+};
 
-// Allokering af plads til structen
-struct Car *car1 = malloc(sizeof(struct Car));
-// Modificering af værdierne
-car1->door_numbers = 4;
-car1->speed = 120;
+int main() {
+  // Allokering af plads til structen
+  struct Car *car1 = malloc(sizeof(struct Car));
+  // Modificering af værdierne
+  car1->door_numbers = 4;
+  car1->speed = 120;
+  return 0;
+}
 ```
 
 Her bruger vi `->` istedet for `.`, da `malloc` returnerer en pointer til structen.

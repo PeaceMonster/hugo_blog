@@ -33,11 +33,12 @@ url = "mailto:blog@mikkelugilt.com"
 
 [menu]
 
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 10
+
 
 [taxonomies]
 category = "categories"
